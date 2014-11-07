@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2702A2F11A0D32CA003F67BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F01A0D32CA003F67BD /* main.m */; };
+		2702A2F41A0D32CA003F67BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F31A0D32CA003F67BD /* AppDelegate.m */; };
+		2702A2F71A0D32CA003F67BD /* CoffeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F51A0D32CA003F67BD /* CoffeeApp.xcdatamodeld */; };
+		2702A2FA1A0D32CA003F67BD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F91A0D32CA003F67BD /* MasterViewController.m */; };
+		2702A2FD1A0D32CA003F67BD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2FC1A0D32CA003F67BD /* DetailViewController.m */; };
+		2702A3001A0D32CA003F67BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2702A2FE1A0D32CA003F67BD /* Main.storyboard */; };
+		2702A3021A0D32CA003F67BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702A3011A0D32CA003F67BD /* Images.xcassets */; };
+		2702A3051A0D32CA003F67BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2702A3031A0D32CA003F67BD /* LaunchScreen.xib */; };
+		2702A3111A0D32CA003F67BD /* CoffeeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A3101A0D32CA003F67BD /* CoffeeAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2702A30B1A0D32CA003F67BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2702A2E31A0D32CA003F67BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2702A2EA1A0D32CA003F67BD;
+			remoteInfo = CoffeeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2702A2EB1A0D32CA003F67BD /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2702A2EF1A0D32CA003F67BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2702A2F01A0D32CA003F67BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2702A2F21A0D32CA003F67BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2702A2F31A0D32CA003F67BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2702A2F61A0D32CA003F67BD /* CoffeeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeApp.xcdatamodel; sourceTree = "<group>"; };
+		2702A2F81A0D32CA003F67BD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		2702A2F91A0D32CA003F67BD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2702A2FB1A0D32CA003F67BD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2702A2FC1A0D32CA003F67BD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2702A2FF1A0D32CA003F67BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2702A3011A0D32CA003F67BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2702A3041A0D32CA003F67BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2702A30A1A0D32CA003F67BD /* CoffeeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2702A30F1A0D32CA003F67BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2702A3101A0D32CA003F67BD /* CoffeeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2702A2E81A0D32CA003F67BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2702A3071A0D32CA003F67BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2702A2E21A0D32CA003F67BD = {
+			isa = PBXGroup;
+			children = (
+				2702A2ED1A0D32CA003F67BD /* CoffeeApp */,
+				2702A30D1A0D32CA003F67BD /* CoffeeAppTests */,
+				2702A2EC1A0D32CA003F67BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2702A2EC1A0D32CA003F67BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2702A2EB1A0D32CA003F67BD /* CoffeeApp.app */,
+				2702A30A1A0D32CA003F67BD /* CoffeeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2702A2ED1A0D32CA003F67BD /* CoffeeApp */ = {
+			isa = PBXGroup;
+			children = (
+				2702A2F21A0D32CA003F67BD /* AppDelegate.h */,
+				2702A2F31A0D32CA003F67BD /* AppDelegate.m */,
+				2702A2F81A0D32CA003F67BD /* MasterViewController.h */,
+				2702A2F91A0D32CA003F67BD /* MasterViewController.m */,
+				2702A2FB1A0D32CA003F67BD /* DetailViewController.h */,
+				2702A2FC1A0D32CA003F67BD /* DetailViewController.m */,
+				2702A2FE1A0D32CA003F67BD /* Main.storyboard */,
+				2702A3011A0D32CA003F67BD /* Images.xcassets */,
+				2702A3031A0D32CA003F67BD /* LaunchScreen.xib */,
+				2702A2F51A0D32CA003F67BD /* CoffeeApp.xcdatamodeld */,
+				2702A2EE1A0D32CA003F67BD /* Supporting Files */,
+			);
+			path = CoffeeApp;
+			sourceTree = "<group>";
+		};
+		2702A2EE1A0D32CA003F67BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2702A2EF1A0D32CA003F67BD /* Info.plist */,
+				2702A2F01A0D32CA003F67BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2702A30D1A0D32CA003F67BD /* CoffeeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2702A3101A0D32CA003F67BD /* CoffeeAppTests.m */,
+				2702A30E1A0D32CA003F67BD /* Supporting Files */,
+			);
+			path = CoffeeAppTests;
+			sourceTree = "<group>";
+		};
+		2702A30E1A0D32CA003F67BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2702A30F1A0D32CA003F67BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2702A2EA1A0D32CA003F67BD /* CoffeeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2702A3141A0D32CA003F67BD /* Build configuration list for PBXNativeTarget "CoffeeApp" */;
+			buildPhases = (
+				2702A2E71A0D32CA003F67BD /* Sources */,
+				2702A2E81A0D32CA003F67BD /* Frameworks */,
+				2702A2E91A0D32CA003F67BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeApp;
+			productName = CoffeeApp;
+			productReference = 2702A2EB1A0D32CA003F67BD /* CoffeeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2702A3091A0D32CA003F67BD /* CoffeeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2702A3171A0D32CA003F67BD /* Build configuration list for PBXNativeTarget "CoffeeAppTests" */;
+			buildPhases = (
+				2702A3061A0D32CA003F67BD /* Sources */,
+				2702A3071A0D32CA003F67BD /* Frameworks */,
+				2702A3081A0D32CA003F67BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2702A30C1A0D32CA003F67BD /* PBXTargetDependency */,
+			);
+			name = CoffeeAppTests;
+			productName = CoffeeAppTests;
+			productReference = 2702A30A1A0D32CA003F67BD /* CoffeeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2702A2E31A0D32CA003F67BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Michael Campbell";
+				TargetAttributes = {
+					2702A2EA1A0D32CA003F67BD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					2702A3091A0D32CA003F67BD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 2702A2EA1A0D32CA003F67BD;
+					};
+				};
+			};
+			buildConfigurationList = 2702A2E61A0D32CA003F67BD /* Build configuration list for PBXProject "CoffeeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2702A2E21A0D32CA003F67BD;
+			productRefGroup = 2702A2EC1A0D32CA003F67BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2702A2EA1A0D32CA003F67BD /* CoffeeApp */,
+				2702A3091A0D32CA003F67BD /* CoffeeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2702A2E91A0D32CA003F67BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2702A3001A0D32CA003F67BD /* Main.storyboard in Resources */,
+				2702A3051A0D32CA003F67BD /* LaunchScreen.xib in Resources */,
+				2702A3021A0D32CA003F67BD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2702A3081A0D32CA003F67BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2702A2E71A0D32CA003F67BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2702A2FD1A0D32CA003F67BD /* DetailViewController.m in Sources */,
+				2702A2FA1A0D32CA003F67BD /* MasterViewController.m in Sources */,
+				2702A2F41A0D32CA003F67BD /* AppDelegate.m in Sources */,
+				2702A2F71A0D32CA003F67BD /* CoffeeApp.xcdatamodeld in Sources */,
+				2702A2F11A0D32CA003F67BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2702A3061A0D32CA003F67BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2702A3111A0D32CA003F67BD /* CoffeeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2702A30C1A0D32CA003F67BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2702A2EA1A0D32CA003F67BD /* CoffeeApp */;
+			targetProxy = 2702A30B1A0D32CA003F67BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2702A2FE1A0D32CA003F67BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2702A2FF1A0D32CA003F67BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2702A3031A0D32CA003F67BD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2702A3041A0D32CA003F67BD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2702A3121A0D32CA003F67BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2702A3131A0D32CA003F67BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2702A3151A0D32CA003F67BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoffeeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2702A3161A0D32CA003F67BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoffeeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2702A3181A0D32CA003F67BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoffeeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeApp.app/CoffeeApp";
+			};
+			name = Debug;
+		};
+		2702A3191A0D32CA003F67BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoffeeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeApp.app/CoffeeApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2702A2E61A0D32CA003F67BD /* Build configuration list for PBXProject "CoffeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2702A3121A0D32CA003F67BD /* Debug */,
+				2702A3131A0D32CA003F67BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2702A3141A0D32CA003F67BD /* Build configuration list for PBXNativeTarget "CoffeeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2702A3151A0D32CA003F67BD /* Debug */,
+				2702A3161A0D32CA003F67BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2702A3171A0D32CA003F67BD /* Build configuration list for PBXNativeTarget "CoffeeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2702A3181A0D32CA003F67BD /* Debug */,
+				2702A3191A0D32CA003F67BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2702A2F51A0D32CA003F67BD /* CoffeeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2702A2F61A0D32CA003F67BD /* CoffeeApp.xcdatamodel */,
+			);
+			currentVersion = 2702A2F61A0D32CA003F67BD /* CoffeeApp.xcdatamodel */;
+			path = CoffeeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2702A2E31A0D32CA003F67BD /* Project object */;
+}
