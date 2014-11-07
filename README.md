@@ -1,0 +1,4 @@
+CoffeeApp
+=========
+
+A sample CoffeeApp
