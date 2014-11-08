@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MasterViewController.h"
+#import "CoffeeDetailViewController.h"
+#import "CoffeeListViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,11 +16,15 @@
 
 @implementation AppDelegate
 
++ (AppDelegate *)sharedDelegate
+{
+    return (AppDelegate *) [[UIApplication sharedApplication] delegate];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
+    CoffeeListViewController *controller = (CoffeeListViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
