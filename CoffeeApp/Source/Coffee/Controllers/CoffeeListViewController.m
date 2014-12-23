@@ -10,6 +10,9 @@
 #import "ServiceBase.h"
 #import "Coffee+Generic.h"
 #import "CoffeeDetailViewController.h"
+#import "CoffeeTableViewCell.h"
+#import "AFNetworking.h"
+#import "ViewConstants.h"
 
 @implementation CoffeeListViewController
 
@@ -32,8 +35,8 @@
 
 - (void)setupView
 {
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:242/255.0 green:100/255.0 blue:34/255.0 alpha:255/255.0];
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tearDrop-white"]];
+    self.navigationController.navigationBar.barTintColor = [ViewConstants navigationBarColor];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"drip-white"]];
     [self setTitle:@""];
 }
 
@@ -60,23 +63,47 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    CoffeeTableViewCell *cell = [[CoffeeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     [self configureCell:cell atIndexPath:indexPath];
+	[cell updateView];
     return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"name"] description];
-    cell.detailTextLabel.text = [[object valueForKey:@"details"] description];
-    cell.detailTextLabel.numberOfLines = 2;
+- (void)configureCell:(CoffeeTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    Coffee *coffee = [self.fetchedResultsController objectAtIndexPath:indexPath];
+	cell.coffeeTitle = coffee.name;
+	cell.coffeeDescription = coffee.details;
+	
+	if (coffee.imageURL.length > 0) {
+		NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:coffee.imageURL]];
+		AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+		requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
+		[requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+			dispatch_async(dispatch_get_main_queue(), ^{
+				cell.coffeeImage = responseObject;
+				[cell addImage];
+			});
+		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+			NSLog(@"Image error: %@", error);
+		}];
+
+		[requestOperation start];
+	}
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    Coffee *coffee = [[self fetchedResultsController] objectAtIndexPath:indexPath];
     [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	Coffee *coffee = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+	if (coffee.imageURL.length > 0) {
+		return 300;
+	}
+	return 100;
 }
 
 #pragma mark - Fetched results controller
@@ -156,7 +183,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self configureCell:(CoffeeTableViewCell *)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:

@@ -7,6 +7,7 @@
 //
 
 #import "CoffeeDetailViewController.h"
+#import "ViewConstants.h"
 
 @interface CoffeeDetailViewController ()
 
@@ -18,8 +19,9 @@
 
 
 - (void)configureView {
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:242/255.0 green:100/255.0 blue:34/255.0 alpha:255/255.0];
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tearDrop-white"]];
+    self.navigationController.navigationBar.barTintColor = [ViewConstants navigationBarColor];
+	UIImageView *dripImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"drip-white"]];
+    self.navigationItem.titleView = dripImageView;
     
     // Update the user interface for the detail item.
     if (self.coffee) {
@@ -59,9 +61,7 @@
     
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel"
                                                      style:UIAlertActionStyleCancel
-                                                   handler:^(UIAlertAction *action) {
-                                                       //do nothing
-                                                   }];
+                                                   handler:nil];
     [alertController addAction:message];
     [alertController addAction:email];
     [alertController addAction:cancel];

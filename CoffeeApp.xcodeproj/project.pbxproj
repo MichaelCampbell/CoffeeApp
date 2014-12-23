@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2003C4C01A300630008BB984 /* ViewConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003C4BF1A300630008BB984 /* ViewConstants.m */; };
+		2003C4C61A300774008BB984 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2003C4C51A300774008BB984 /* UIColor+Hex.m */; };
+		203102A21A2FE05500AFA394 /* CoffeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203102A11A2FE05500AFA394 /* CoffeeTableViewCell.m */; };
 		2702A2F11A0D32CA003F67BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F01A0D32CA003F67BD /* main.m */; };
 		2702A2F41A0D32CA003F67BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F31A0D32CA003F67BD /* AppDelegate.m */; };
 		2702A2F71A0D32CA003F67BD /* CoffeeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2702A2F51A0D32CA003F67BD /* CoffeeApp.xcdatamodeld */; };
@@ -33,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2003C4BE1A300630008BB984 /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewConstants.h; path = Source/Shared/View/ViewConstants.h; sourceTree = "<group>"; };
+		2003C4BF1A300630008BB984 /* ViewConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewConstants.m; path = Source/Shared/View/ViewConstants.m; sourceTree = "<group>"; };
+		2003C4C41A300774008BB984 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Source/Shared/View/Categories/UIColor+Hex.h"; sourceTree = "<group>"; };
+		2003C4C51A300774008BB984 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Source/Shared/View/Categories/UIColor+Hex.m"; sourceTree = "<group>"; };
+		203102A01A2FE05500AFA394 /* CoffeeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeTableViewCell.h; path = Source/Coffee/Views/CoffeeTableViewCell.h; sourceTree = "<group>"; };
+		203102A11A2FE05500AFA394 /* CoffeeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeTableViewCell.m; path = Source/Coffee/Views/CoffeeTableViewCell.m; sourceTree = "<group>"; };
 		2702A2EB1A0D32CA003F67BD /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2702A2EF1A0D32CA003F67BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2702A2F01A0D32CA003F67BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2003C4C11A300635008BB984 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2003C4C31A30074B008BB984 /* Categories */,
+				2003C4BE1A300630008BB984 /* ViewConstants.h */,
+				2003C4BF1A300630008BB984 /* ViewConstants.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2003C4C31A30074B008BB984 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2003C4C41A300774008BB984 /* UIColor+Hex.h */,
+				2003C4C51A300774008BB984 /* UIColor+Hex.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		2702A2E21A0D32CA003F67BD = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +190,7 @@
 		2702A3221A0D6BA7003F67BD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				276D49ED1A0D9D4600809E82 /* Controller */,
+				2003C4C11A300635008BB984 /* View */,
 				2702A31D1A0D6ADC003F67BD /* Model */,
 			);
 			name = Shared;
@@ -191,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2702A3361A0D8B57003F67BD /* Controllers */,
+				276D49ED1A0D9D4600809E82 /* Views */,
 			);
 			name = Coffee;
 			sourceTree = "<group>";
@@ -206,11 +235,13 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		276D49ED1A0D9D4600809E82 /* Controller */ = {
+		276D49ED1A0D9D4600809E82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				203102A01A2FE05500AFA394 /* CoffeeTableViewCell.h */,
+				203102A11A2FE05500AFA394 /* CoffeeTableViewCell.m */,
 			);
-			name = Controller;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		7C4FDBFF2EADADEE984ABE7D /* Pods */ = {
@@ -368,10 +399,13 @@
 				2702A2FD1A0D32CA003F67BD /* CoffeeDetailViewController.m in Sources */,
 				2702A32D1A0D7626003F67BD /* Coffee.m in Sources */,
 				2702A3301A0D8489003F67BD /* Coffee+Generic.m in Sources */,
+				203102A21A2FE05500AFA394 /* CoffeeTableViewCell.m in Sources */,
 				2702A3341A0D8B45003F67BD /* CoffeeListViewController.m in Sources */,
 				2702A31C1A0D406E003F67BD /* ServiceBase.m in Sources */,
 				2702A2F41A0D32CA003F67BD /* AppDelegate.m in Sources */,
 				2702A2F71A0D32CA003F67BD /* CoffeeApp.xcdatamodeld in Sources */,
+				2003C4C61A300774008BB984 /* UIColor+Hex.m in Sources */,
+				2003C4C01A300630008BB984 /* ViewConstants.m in Sources */,
 				2702A2F11A0D32CA003F67BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
